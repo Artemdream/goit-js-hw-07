@@ -20,16 +20,5 @@ function createGallery (images) {
     }).join(""); 
 };
 
-container.addEventListener('click', onClick);
-
-function onClick(e) {
-    e.preventDefault()
-    if (e.target.nodeName !== 'IMG') {
-        return
-     }; 
-
-     e.target.getAttribute("alt")
-     
-};
  new SimpleLightbox('.gallery a', 
  {captionDelay: 250, captionPosition: 'bottom', captionsData: 'alt'});

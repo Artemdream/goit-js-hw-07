@@ -40,4 +40,11 @@ function onClick(e) {
     `);  
 
     instance.show()
+
+    window.onkeydown = function (e) {
+        e.preventDefault();
+        if (e.code === 'Escape') {
+          instance.close();
+        }
+      };
 };
